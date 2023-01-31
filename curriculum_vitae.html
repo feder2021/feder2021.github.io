@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae</title>
+    <link rel="icon" type="image/x-icon" href="images\favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css\estilos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="lado_izquierdo">
+            <div class="profiletext">
+                <div class="imgbx">
+                    <img id="autoretrato" alt="No se ha podido cargar la imagen correctamente."/>
+                </div>
+                <h2>
+                     <span id="encabezado"></span><br><span>Diseñador Web</span>
+                </h2>
+            </div>
+
+            <div class="contactinfo">
+                <h3 class="titulo">Información personal</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
+                        <span class="texto" id="edad"></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="texto" id="direccion"></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                        <span class="texto" id="telefono"></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="texto" id="email"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="redes_sociales">
+                <ul>
+                    <li>
+                        <a title="Facebook" href="https://www.facebook.com/" target="_blank"><span class="icon"><i class="fa fa-facebook-square" aria-hidden="true"></i></span></a>                 
+                    </li>
+                    <li>
+                        <a title="Instagram" href="https://www.instagram.com/?hl=es" target="_blank"><span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+                    </li>
+                    <li>
+                        <a title="twitter" href=" https://twitter.com/?lang=es" target="_blank"><span class="icon"><i class="fa fa-twitter-square" aria-hidden="true"></i></span></a>
+                    </li>
+                    <li>
+                        <a title="Linkedin" href="https://ar.linkedin.com/" target="_blank"><span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="lado_derecho">
+            <nav>
+                <div class="menu_seleccionable">
+                    <ul>
+                        <li id="perfil">
+                            <span class="icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+                            <span class="texto">perfil</span>
+                        </li>
+                        <li id="educacion">
+                            <span class="icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                            <span class="texto" id="eduacion">educación</span>
+                        </li>
+                        <li id="experiencia">
+                            <span class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                            <span class="texto">experiencia</span>
+                            <span class="texto">laboral</span>
+                        </li>
+                        <li id="habilidades">
+                            <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                            <span class="texto">habilidades</span>
+                        </li>
+                        <li id="intereses">
+                            <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                            <span class="texto">intereses</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            <section>
+                <div class="about">
+                    <h2 class="titulo2" id="resultado_datos_titulo"></h2>
+                    <div id="resultado_datos_texto"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+<script src="js/myscript.js"></script> 
+
+</body>
+</html>

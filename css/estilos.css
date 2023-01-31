@@ -1,0 +1,357 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+body{
+  background: #1D67A8;
+  background: -moz-linear-gradient(izquierda, #1D67A8 0%, #288EE7 51%, #FFFFFF 100%);
+  background: -webkit-linear-gradient(izquierda, #1D67A8 0%, #288EE7 51%, #FFFFFF 100%);
+  background: linear-gradient(to right, #1D67A8 0%, #288EE7 51%, #FFFFFF 100%);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contenedor{
+  position: relative;
+  width: 100%;
+  max-width: 1150px;
+  min-height: 1150px;
+  margin:50px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  -webkit-box-shadow: -20px 19px 30px 0px rgba(14,50,81,0.8); 
+  box-shadow: -20px 19px 30px 0px rgba(14,50,81,0.8);
+}
+
+.contenedor .lado_izquierdo{
+  position: relative;
+  background: #003147;
+  padding:40px;
+}
+
+.profiletext{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profiletext .imgbx{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px double #fff;
+}
+
+.profiletext .imgbx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.profiletext h2{
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.profiletext h2 span~span{
+  color: #fff;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contactinfo{
+  padding-top: 40px;
+}
+
+.titulo{
+  color: #fff;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contactinfo ul{
+  position: relative;
+}
+ 
+.contactinfo ul li{
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contactinfo ul li span{
+  color: #fff;
+  font-weight: 300;
+}
+
+.contactinfo ul li span~span:hover{
+  background-color: #0099cc;
+}
+
+.contactinfo ul li .icon{
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #0099cc;
+}
+
+.redes_sociales ul{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  position: relative;
+  margin-top: 25px;
+}
+ 
+.redes_sociales ul li{
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  }
+
+.redes_sociales ul li .icon{  
+  display: inline-block;
+  font-size: 50px;
+  color: #fff;
+
+}
+
+.redes_sociales ul li .icon:hover{
+  background-color: #0099cc;
+}
+
+.contenedor .lado_derecho{ 
+  position: relative;
+  background: #fff;
+  padding:40px;
+}
+
+.menu_seleccionable{
+  padding:20px 0px 20px 0px;
+  border-top: 2px solid #003147;
+  border-bottom: 2px solid #003147;
+}
+
+.menu_seleccionable ul{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  position: relative;
+  padding: 0 20px 0 20px;
+}
+
+.menu_seleccionable ul li{
+  text-align: center;
+  position: relative;
+  list-style: none;
+  background-color:#003147;
+  margin: 10px 10px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  padding: 20px 10px;
+  -webkit-box-shadow: -2px 4px 12px 2px rgba(14,50,81,0.7);
+  box-shadow: -2px 4px 12px 2px rgba(14,50,81,0.7);
+  cursor: pointer;
+}
+
+.menu_seleccionable ul li:hover{
+  background-color: #0099cc;
+}
+
+.menu_seleccionable ul li span{
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu_seleccionable ul li .icon{
+  width: 30px;
+  font-size: 50px;
+  color: #fff;
+}
+
+.about .titulo2{
+  text-align: center;
+  color:#003147;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+p{
+  text-align: justify;
+  text-justify: inter-word;
+  color: #333;
+}
+
+.about .box{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box .años{
+  min-width: 150px;
+  margin-right: 20px;
+}
+
+.about .box .años h5{
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+} 
+
+.about .box .texto h4{
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+
+.about .box_habilidades{
+position: relative;
+width: 100%;
+display: grid;
+grid-template-columns: 150px 1fr;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.about .box_habilidades h4{
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+
+}
+.about .box_habilidades .porcentaje{
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: #848c90;
+}
+
+.about .box_habilidades .porcentaje .habilidad_1{
+  width: 95%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.about .box_habilidades .porcentaje .habilidad_2{
+  width: 85%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.about .box_habilidades .porcentaje .habilidad_3{
+  width: 65%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.about .box_habilidades .porcentaje .habilidad_4{
+  width: 75%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.about .box_habilidades .porcentaje .habilidad_5{
+  width: 95%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.about .intereses ul{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.about .intereses ul li{
+  list-style: none;
+  color:#333;
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b2bbc0;
+}
+
+
+.about .intereses ul li .fa{
+  color:#03a9f4;
+  width: 20px;
+  margin-right: 50px;
+}
+
+@media(max-width:1150px){
+  .contenedor{
+    margin:10px;
+    grid-template-columns: repeat(1,1fr);
+  }
+  body{
+    background: #1D67A8;
+  }
+
+}
+
+@media(max-width:600px){
+  .contenedor{
+    margin:10px;
+    grid-template-columns: repeat(1,1fr);
+  }
+  body{
+    background: #1D67A8;
+  }
+
+  .about .box {
+    display: flex; 
+    flex-direction: column;
+    margin: 20px 0px;
+}  
+
+}
